@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>Cross cars</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/styles2.css">
+
+</head>
+
+<body>
+
+<div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <!--The name brand of this application, Which is "CROSS CARS"-->
+      <a class="navbar-brand" href="#">CROSS CARS</a>
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Buy a Car<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" >Register</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link">Login</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav> 
+    <!--drop down search engine button-->
+    <!--this select is for MAKE select, it will enable MODEL select when selected-->
+<div class="container">  
+  <div class="btn-group">
+    <select id="make" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <option value="0"disabled selected hidden >Select Make</option>
+      <option value="1">Audi</option>
+      <option value="2">Bmw</option>
+      <option value="3">Dodge</option>
+      <option value="4">Jaguar</option>    
+      <option value="5">Lexus</option>
+      <option value="6">Mercedes-benz</option>
+      <option value="7">Toyota</option>
+      <option value="8">Volkswagen</option>
+    </select>
+  </div>
+<!--this is a disable Empty Select which be replace with what a user has chosen-->
+<div class="btn-group">
+    <select id="Model" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" disabled>
+      <option value=""disabled selected hidden>Select Model</option>
+      <option value="Empty">Empty</option>
+    </select>
+    </div>
+    <button id="searchBtn" class="btn btn-danger" onclick="change()">Search</button>
+    </div>
+</div>
+
+</div>
+
+<div class="row" id="theCards">
+  <div class="column">
+    <div class="card">
+      <img class="card-img-top" src="assets/images/Audi_a1/audi A1.jpg" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">R504 990</h4>
+        <p class="card-text">Audi A1</p>
+        <p>2019 . 184km . manual</p>
+        <a href="pages\Audi\a1\a1(1).html" class="btn btn-primary btn-block">view</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column" id="theCards">
+    <div class="card">
+      <img class="card-img-top" src="assets/images/bmw_3series.jpg" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">R679 000</h4>
+        <p class="card-text">BMW 3 Series</p>
+        <p>2019 . 528km . Automatic</p>
+        <a href="pages/BMW/3-Series/3series.html" class="btn btn-primary btn-block">view</a>
+      </div>
+    </div>
+  </div>
+  <div class="column" id="theCards">
+    <div class="card">
+      <img class="card-img-top" src="assets\images\golf 1.jpg" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">R671 990</h4>
+        <p class="card-text">Volkswagen Golf R</p>
+        <p>2019 . 1 000km . Automatic</p>
+        <a href="pages/Volkswagen/golf/golf.html" class="btn btn-primary btn-block">view</a>
+      </div>
+    </div>
+  </div>
+  <div class="column" id="theCards">
+    <div class="card">
+      <img class="card-img-top" src="assets/images/tiguan.jpg" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">R710 000</h4>
+        <p class="card-text">Volkswagen Tiguan</p>
+        <p>2020 . 50km . Automatic</p>
+        <a href="pages/Volkswagen/tiguan/tiguan.html" class="btn btn-primary btn-block">view</a>
+      </div>
+  </div>
+</div>
+<br><br><br>
+<section>
+<footer>
+  <div class="container-fluid padding">
+  <div class="row text-center">
+      <div class="col-md-4">
+        <h2>CROSS CARS</h2>
+        <p>071 123 4567</p>
+        <p>abcdef.@gmail.com</p>
+        <p>240 street</p>
+        <p>vinewood, state</p>
+      </div>
+      <div class="col-md-4">
+          <a href="#" class="footerli">About us</a>
+          <br><br>
+          <a href="#" class="footerli">Contact us</a>
+          <br><br>
+          <a href="#" class="footerli">Safety & security</a>
+      </div>
+            <div class="col-md-4">
+          
+          <a href="#" class="footerli">Privacy policy</a>
+          <br><br>
+          <a href="#" class="footerli">Feedback</a>
+          <br><br>
+          <a href="#" class="footerli">Buy a car</a>
+      </div>
+      <div class="col-12">
+          <hr class="light">
+          <h5>&copy; crosscars.com</h5>
+      </div>
+  </div>
+  </div>
+</footer>
+</section>
+
+
+
+<script src="assets\scripts\cross_cars.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
