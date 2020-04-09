@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+.navbar{
+  padding: 2px;
+}
+.navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link:hover{
+  font-size: 1.1em !important;
+}
+.navbar-brand
+{
+  font-size: 60px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  line-height: 80px;
+  transition: 0.8s all;
+}
+nav ul li:hover{
+  background-color: rgb(0, 140, 255);
+  border-radius: 30px;
+  box-shadow: 0px 0px 3px 0px rgb(3, 255, 242);
+}
+nav ul li a{
+  text-decoration: none;
+  color: rgb(39, 78, 155);
+  padding: 40px; 
+}
+h1{
+  color: black;
+  text-align: center;
+}
+h4{
+  margin-top: 20px;
+}
+.container{
+  background-color: white;
+  width: 800px;
+  margin-top: 50px;
+}
+/*styles for the specification list*/
+li{
+  list-style: none;
+}
+#fuel{
+  margin-left: 7em;
+}
+#colour{
+  margin-left: 6em;
+}
+#type{
+  margin-left: 4em;
+}
+#speed{
+  margin-left: 4em;
+}
+#distance{
+  margin-left: 5em;
+}
+#doors{
+  margin-left: 5em;
+}
+#wheels{
+  margin-left: 4em;
+}
+#airbag{
+  margin-left: 4em;
+}
+#brakes{
+  margin-left: 3em;
+}
+#fType{
+  margin-left: 6em;
+}
+#engine{
+  margin-left: 6em;
+}
+/* styles for the footer*/
+footer{
+  background-color: rgb(26, 26, 236);
+  color: white;
+}
+.footerli{
+  color: white;
+}
+a:hover{
+  color: aliceblue;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.display-left{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(45, 45, 202);
+  color: white;
+  padding-top: 5px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.display-right{
+  padding: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(45, 45, 202);
+  color: white;
+  padding-top: 5px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.mySlides{
+  border-radius: 20px;
+}
+/*styles for the view cards*/
+#viewCards{
+  margin-left: 17%;
+ height: 300px;
+}
+#sendForm{
+  margin-left: 20%;
+  margin-top: 4%;
+}

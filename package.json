@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "A car sale website",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d My_Project"
+  },
+  "author": "Minenhle",
+  "license": "ISC",
+  "homepage": "https://MinenhleSolson.github.io/crosscars",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
